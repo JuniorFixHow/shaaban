@@ -16,7 +16,7 @@ const Login = ({setHasLoggedIn}:{setHasLoggedIn:Dispatch<SetStateAction<boolean>
     }
   return (
     <div className="w-full h-screen items-center justify-center flex flex-col gap-8" >
-        <span className="text-3xl font-bold" >Welcome, Shaaban</span>
+        <span className="text-3xl font-bold" >Welcome, Shaban</span>
         <div className="flex bg-white rounded-lg shadow-xl flex-col gap-4 p-8 w-[20rem] h-[20rem]">
             <span className="text-2xl font-bold" >Security key</span>
             <input onChange={(e)=>setPwd(e.target.value)} className="border border-slate-400 outline-none px-2 py-1 rounded-md" required type="password" placeholder="enter security key" />
