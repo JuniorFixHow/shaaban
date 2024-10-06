@@ -19,8 +19,8 @@ export function formatArraysAsString(X: number[], Y: number[]): string {
     const result: string[] = [];
     
     for (let i = 0; i < X.length; i++) {
-        result.push(`(${Y[i]}   ${X[i]})`);
+        result.push(`${Y[i]} \n${X[i]}`);
     }
 
-    return result.join(', ');
+    return `POLYGON((${result.join(', ')}))`;
 }
