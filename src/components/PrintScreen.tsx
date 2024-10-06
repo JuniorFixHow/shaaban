@@ -51,7 +51,7 @@ const PrintScreen = ({coordinates, gapData,  openModal, qrData, setOpenModal}:Co
 
     const MyDocument = ()=>{
         return(
-        <Document  style={{height:'100%', width:'100%'}} >
+        <Document  style={{width:'100%'}} >
             <Page id="printableDiv" style={{width:'100%', height:'100%'}} size='A5' >
                 <View style={{width:'100%', height:'100%', alignItems:'flex-start', display:'flex', paddingTop:30, flexDirection:'row', justifyContent:'space-between', paddingHorizontal:30 }} >
 
@@ -120,7 +120,7 @@ const PrintScreen = ({coordinates, gapData,  openModal, qrData, setOpenModal}:Co
 
         <div   className="flex w-full h-screen items-center justify-center absolute">
 
-            <div className="flex flex-col items-center gap-8  w-[90%] md:w-[70%] lg:w-[50%] p-4 md:p-8 shadow-lg bg-white h-[calc(100vh-5rem)]">
+            <div className="flex flex-col items-center gap-8 justify-between w-[90%] md:w-[70%] lg:w-[50%] p-4 md:p-8 shadow-lg bg-white h-[calc(100vh-5rem)]">
                 <MyDocument />
                 <div className="flex flex-row justify-between w-full">
                     <button onClick={()=>setOpenModal(false)} type='button' className="p-2 bg-red-600 rounded-lg hover:bg-red-500 text-white w-1/3" >Close</button>
